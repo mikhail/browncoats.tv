@@ -320,11 +320,8 @@ button {
 }
 
 .sketch-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 400px);
-  gap: 42px;
-  align-items: center;
   padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .sketch-frame {
@@ -363,7 +360,7 @@ button {
 .sketch-frame img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
   filter: sepia(0.35) saturate(0.82) contrast(1.08) brightness(0.78);
@@ -382,10 +379,6 @@ button {
   letter-spacing: 0.08em;
   line-height: 1.35;
   text-transform: uppercase;
-}
-
-.sketch-copy {
-  max-width: 520px;
 }
 
 .compare-section {
@@ -652,7 +645,6 @@ input::placeholder {
   .revenue-grid,
   .comparison-grid,
   .brief-grid,
-  .sketch-section,
   .economics-grid {
     grid-template-columns: 1fr;
   }
