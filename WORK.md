@@ -36,6 +36,7 @@ DECISIONS:
 - Next emphasis: direct-support revenue pitch to Firefly decision-makers <!-- ANSWERED: 2026-05-03T19:32:00Z -->
 - Tier naming: $5.99 Browncoat and $9.99 First Mate <!-- ANSWERED: 2026-05-03T19:33:00Z -->
 - Main pitch CTA: Contact me to transfer this domain name to you for free <!-- ANSWERED: 2026-05-03T19:35:00Z -->
+- Revenue calculator default: 25,000 Browncoat subscribers plus 5,000 First Mate subscribers <!-- ANSWERED: 2026-05-03T19:38:00Z -->
 
 NEW TASKS:
 - [ ] implement subscription/paywall integration #payments <!-- CREATED: 2026-05-03T19:18:52Z id:work-implement-subscription-paywall-integration-payments-1777835932 -->
@@ -107,6 +108,7 @@ Recommended section direction:
 - Alternate headlines: "Firefly can keep flying without a platform middleman." / "Own the audience. Own the schedule. Keep the signal alive."
 - Proof points: direct subscriber revenue, owned audience relationship, event-driven programming, visible niche demand, less dependence on platform priorities.
 - Mock calculator: show Browncoat at $5.99/mo and First Mate at $9.99/mo with editable subscriber counts.
+- Default scenario: 25,000 Browncoat subscribers and 5,000 First Mate subscribers.
 - Caveat language: revenue examples are illustrative gross calculations, not projections or guarantees; actual economics depend on rights, production costs, payment fees, taxes, refunds, churn, marketing, operations, and deal structure.
 - CTA emphasis: domain handoff as a low-friction opening move for Firefly owners/producers/studio decision-makers.
 
