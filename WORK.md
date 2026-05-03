@@ -16,9 +16,9 @@ Worker responsibilities (summary):
 
 Initial starter tasks:
 
-- [ ] setup hosting and connect domain #hosting
-- [ ] choose content model #content-model
-- [ ] prepare privacy and payment policy #legal
+- [ ] setup hosting and connect domain #hosting <!-- CREATED: 2026-05-03T19:18:52Z id:work-setup-hosting-and-connect-domain-hosting-1777835932 -->
+- [ ] choose content model #content-model <!-- CREATED: 2026-05-03T19:18:52Z id:work-choose-content-model-content-model-1777835932 -->
+- [ ] prepare privacy and payment policy #legal <!-- CREATED: 2026-05-03T19:18:52Z id:work-prepare-privacy-and-payment-policy-legal-1777835932 -->
 
 Notes:
 - This file is authoritative for the worker. Do not remove the worker comments unless you intend to stop the agent.
@@ -29,7 +29,10 @@ Notes:
 DECISIONS:
 - Audience model: subscription-only <!-- ANSWERED: 2026-05-03T19:17:41Z -->
 - Demo payments: mock payments for prototype, no live processor yet <!-- ANSWERED: 2026-05-03T19:19:33Z -->
+- Core Firefly pitch: combine a direct fan-owned streaming home with host-led watch/community programming <!-- ANSWERED: 2026-05-03T19:20:00Z -->
 
 NEW TASKS:
-- [ ] implement subscription/paywall integration #payments
+- [ ] implement subscription/paywall integration #payments <!-- CREATED: 2026-05-03T19:18:52Z id:work-implement-subscription-paywall-integration-payments-1777835932 -->
 - [ ] build mock subscription checkout flow #payments #demo
+- [ ] rewrite homepage around Firefly fan-owned streaming pitch #copy #demo
+ERROR: 2026-05-03T19:20:46Z git commit failed: not a git repository
