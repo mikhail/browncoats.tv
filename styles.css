@@ -319,6 +319,43 @@ button {
   box-shadow: 0 16px 36px rgba(196, 118, 53, 0.16);
 }
 
+.sketch-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 34px;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.sketch-frame {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid rgba(242, 166, 90, 0.32);
+  border-radius: 32px;
+  background: rgba(255, 244, 226, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.sketch-frame img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.sketch-frame figcaption {
+  border-top: 1px solid var(--line);
+  padding: 12px 16px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.sketch-copy {
+  max-width: 520px;
+}
+
 .compare-section {
   padding-top: 40px;
 }
@@ -583,6 +620,7 @@ input::placeholder {
   .revenue-grid,
   .comparison-grid,
   .brief-grid,
+  .sketch-section,
   .economics-grid {
     grid-template-columns: 1fr;
   }
