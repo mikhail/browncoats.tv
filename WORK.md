@@ -35,6 +35,7 @@ DECISIONS:
 - Mock pricing: $5.99 Browncoat tier plus $9.99 higher tier, name TBD but below Captain <!-- ANSWERED: 2026-05-03T19:28:00Z -->
 - Next emphasis: direct-support revenue pitch to Firefly decision-makers <!-- ANSWERED: 2026-05-03T19:32:00Z -->
 - Tier naming: $5.99 Browncoat and $9.99 First Mate <!-- ANSWERED: 2026-05-03T19:33:00Z -->
+- Main pitch CTA: Contact me to transfer this domain name to you for free <!-- ANSWERED: 2026-05-03T19:35:00Z -->
 
 NEW TASKS:
 - [ ] implement subscription/paywall integration #payments <!-- CREATED: 2026-05-03T19:18:52Z id:work-implement-subscription-paywall-integration-payments-1777835932 -->
@@ -67,6 +68,7 @@ ANSWER: Firefly owners/producers/studio decision-makers. <!-- ANSWERED: 2026-05-
 QUESTION: What mock subscription tiers or price points should the demo show, if any?
 ANSWER: $5.99 Browncoat and $9.99 higher tier, name TBD but below Captain. <!-- ANSWERED: 2026-05-03T19:28:00Z -->
 QUESTION: Should the homepage CTA prioritize "become a subscriber" or "apply to host a show" for the next iteration?
+ANSWER: Contact me to transfer this domain name to you for free. <!-- ANSWERED: 2026-05-03T19:35:00Z -->
 
 - [ ] rewrite homepage hero copy around fan-owned subscription streaming plus host-led community programming #homepage #positioning
 - [ ] add a "Why not big platforms" comparison section emphasizing control, direct fan relationship, and appointment-viewing rituals #homepage #strategy
@@ -95,3 +97,20 @@ Ideas to adapt:
 - [ ] add a "Start here" guide for studios/hosts/fans explaining what the demo proves #onboarding
 - [ ] add a direct-support metric/mock revenue panel showing how fan subscriptions can fund the series without a platform middleman #pitch
 - [ ] add a members-only community perk, likely Discord for the prototype #community
+
+---
+
+REVENUE_COPY_NOTES: Direct-support pitch
+
+Recommended section direction:
+- Headline: "Turn Browncoat loyalty into recurring revenue."
+- Alternate headlines: "Firefly can keep flying without a platform middleman." / "Own the audience. Own the schedule. Keep the signal alive."
+- Proof points: direct subscriber revenue, owned audience relationship, event-driven programming, visible niche demand, less dependence on platform priorities.
+- Mock calculator: show Browncoat at $5.99/mo and First Mate at $9.99/mo with editable subscriber counts.
+- Caveat language: revenue examples are illustrative gross calculations, not projections or guarantees; actual economics depend on rights, production costs, payment fees, taxes, refunds, churn, marketing, operations, and deal structure.
+- CTA emphasis: domain handoff as a low-friction opening move for Firefly owners/producers/studio decision-makers.
+
+Tasks from revenue notes:
+- [ ] add a direct-support revenue calculator section using Browncoat and First Mate tiers #pitch #revenue
+- [ ] add legal-safe prototype and illustrative-revenue disclaimer near calculator #legal #pitch
+- [ ] add a domain-transfer CTA block for Firefly decision-makers #cta #pitch
