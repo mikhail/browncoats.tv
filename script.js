@@ -1,62 +1,16 @@
-const year = document.querySelector("#year");
+/* ── browncoats.tv — prototype interactions ── */
+/* No data is collected, submitted, or stored remotely. */
+/* All interactions are client-side only. */
 
+const year = document.querySelector("#year");
 if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-/* ── Subscriber state (localStorage-backed) ── */
+/* ── Sensitivity model calculator ── */
 
-const STORAGE_KEY = "browncoats_subscriber";
-const BROWNCOAT_PRICE = 5.99;
-const FIRST_MATE_PRICE = 9.99;
-
-function isSubscriber() {
-  try {
-    return localStorage.getItem(STORAGE_KEY) === "true";
-  } catch {
-    return false;
-  }
-}
-
-function setSubscriber(val) {
-  try {
-    if (val) {
-      localStorage.setItem(STORAGE_KEY, "true");
-    } else {
-      localStorage.removeItem(STORAGE_KEY);
-    }
-  } catch {
-    // localStorage unavailable; degrade gracefully
-  }
-  applySubscriberState();
-}
-
-function applySubscriberState() {
-  const subscribed = isSubscriber();
-
-  // Toggle locked cards
-  document.querySelectorAll(".program-card[data-locked]").forEach(function (card) {
-    card.setAttribute("data-locked", subscribed ? "false" : "true");
-  });
-
-  // Toggle banner
-  const banner = document.getElementById("subscriberBanner");
-  if (banner) {
-    banner.hidden = !subscribed;
-  }
-
-  // Toggle nav button text
-  const navBtn = document.getElementById("navSubscribeBtn");
-  if (navBtn) {
-    if (subscribed) {
-      navBtn.textContent = "Subscribed ✓";
-      navBtn.classList.add("subscribed");
-    } else {
-      navBtn.textContent = "Preview checkout";
-      navBtn.classList.remove("subscribed");
-    }
-  }
-}
+const BASE_PRICE = 5.99;
+const PREMIUM_PRICE = 9.99;
 
 function formatCurrency(value) {
   return new Intl.NumberFormat("en-US", {
@@ -66,131 +20,59 @@ function formatCurrency(value) {
   }).format(value);
 }
 
-function updateRevenueModel() {
-  const browncoatInput = document.getElementById("browncoatCount");
-  const firstMateInput = document.getElementById("firstMateCount");
-  const monthlyEl = document.getElementById("grossMonthly");
-  const annualEl = document.getElementById("grossAnnual");
+function updateSensitivityModel() {
+  var baseInput = document.getElementById("browncoatCount");
+  var premiumInput = document.getElementById("firstMateCount");
+  var monthlyEl = document.getElementById("grossMonthly");
+  var annualEl = document.getElementById("grossAnnual");
 
-  if (!browncoatInput || !firstMateInput || !monthlyEl || !annualEl) {
-    return;
-  }
+  if (!baseInput || !premiumInput || !monthlyEl || !annualEl) return;
 
-  const browncoats = Number(browncoatInput.value) || 0;
-  const firstMates = Number(firstMateInput.value) || 0;
-  const monthly = browncoats * BROWNCOAT_PRICE + firstMates * FIRST_MATE_PRICE;
+  var base = Number(baseInput.value) || 0;
+  var premium = Number(premiumInput.value) || 0;
+  var monthly = base * BASE_PRICE + premium * PREMIUM_PRICE;
 
   monthlyEl.textContent = formatCurrency(monthly);
   annualEl.textContent = formatCurrency(monthly * 12);
 }
 
-/* ── Checkout modal ── */
-
-const modal = document.getElementById("checkoutModal");
-const step1 = document.getElementById("checkoutStep1");
-const step2 = document.getElementById("checkoutStep2");
-const step3 = document.getElementById("checkoutStep3");
-
-function openCheckout() {
-  if (isSubscriber()) return;
-  showStep(1);
-  modal.showModal();
-}
-
-function closeCheckout() {
-  modal.close();
-}
-
-function showStep(n) {
-  [step1, step2, step3].forEach(function (s, i) {
-    s.hidden = i !== n - 1;
-  });
-}
-
-// Subscribe CTA buttons
-document.querySelectorAll("#heroSubscribeBtn, #navSubscribeBtn").forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    openCheckout();
-  });
-});
-
-// Lock badges also open checkout
-document.querySelectorAll(".card-lock").forEach(function (lock) {
-  lock.addEventListener("click", function () {
-    openCheckout();
-  });
-});
-
-// Plan selection → step 2
-document.querySelectorAll(".plan-card").forEach(function (card) {
-  card.addEventListener("click", function () {
-    showStep(2);
-  });
-});
-
-// Back to plans
-var backBtn = document.getElementById("backToPlanBtn");
-if (backBtn) {
-  backBtn.addEventListener("click", function () {
-    showStep(1);
-  });
-}
-
-// Close buttons
-document.querySelectorAll("#modalCloseBtn, #modalCloseBtn2").forEach(function (btn) {
-  btn.addEventListener("click", closeCheckout);
-});
-
-// Backdrop click closes modal
-if (modal) {
-  modal.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      closeCheckout();
-    }
-  });
-}
-
-// Demo payment form submit
-var payForm = document.getElementById("demoPayForm");
-if (payForm) {
-  payForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    // Simulate a brief processing delay
-    var submitBtn = payForm.querySelector('button[type="submit"]');
-    submitBtn.textContent = "Processing…";
-    submitBtn.disabled = true;
-    setTimeout(function () {
-      setSubscriber(true);
-      showStep(3);
-      submitBtn.textContent = "Complete demo checkout";
-      submitBtn.disabled = false;
-      payForm.reset();
-    }, 800);
-  });
-}
-
-// Success close
-var successBtn = document.getElementById("successCloseBtn");
-if (successBtn) {
-  successBtn.addEventListener("click", function () {
-    closeCheckout();
-  });
-}
-
-// Reset subscription
-var resetBtn = document.getElementById("resetSubBtn");
-if (resetBtn) {
-  resetBtn.addEventListener("click", function () {
-    setSubscriber(false);
-  });
-}
-
 document.querySelectorAll("#browncoatCount, #firstMateCount").forEach(function (input) {
-  input.addEventListener("input", updateRevenueModel);
+  input.addEventListener("input", updateSensitivityModel);
 });
 
-// Apply state on load
-applySubscriberState();
-updateRevenueModel();
+/* ── Interest selection demo ── */
+/* Client-side only — nothing is sent, saved, or collected. */
+
+function updateInterestSummary() {
+  var container = document.getElementById("interestOptions");
+  var summary = document.getElementById("interestSummary");
+  var countEl = document.getElementById("interestCount");
+  var listEl = document.getElementById("interestList");
+
+  if (!container || !summary || !countEl || !listEl) return;
+
+  var checked = container.querySelectorAll('input[type="checkbox"]:checked');
+  var labels = [];
+  checked.forEach(function (cb) {
+    labels.push(cb.getAttribute("data-label") || cb.value);
+  });
+
+  if (labels.length > 0) {
+    summary.hidden = false;
+    countEl.textContent = labels.length + " categor" + (labels.length === 1 ? "y" : "ies") + " selected";
+    listEl.textContent = labels.join(" · ");
+  } else {
+    summary.hidden = true;
+    countEl.textContent = "0 categories selected";
+    listEl.textContent = "";
+  }
+}
+
+var interestOptions = document.getElementById("interestOptions");
+if (interestOptions) {
+  interestOptions.addEventListener("change", updateInterestSummary);
+}
+
+/* ── Initialize on load ── */
+updateSensitivityModel();
 
