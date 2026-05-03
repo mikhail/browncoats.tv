@@ -26,10 +26,13 @@
         <span>browncoats.tv</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
+        <a href="#programming">Programming</a>
         <a href="#watch">Watch</a>
+        <a href="#hosts">Hosts</a>
         <a href="#signal">Signal</a>
         <a href="#join">Join</a>
       </nav>
+      <button class="nav-subscribe-btn" id="navSubscribeBtn">Subscribe</button>
     </header>
 
     <main id="top">
@@ -43,8 +46,8 @@
             the credits roll.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#join">Get launch updates</a>
-            <a class="button secondary" href="#signal">See what's planned</a>
+            <a class="button primary subscribe-cta" href="#" id="heroSubscribeBtn">Become a subscriber</a>
+            <a class="button secondary" href="#programming">See what&rsquo;s on</a>
           </div>
         </div>
         <aside class="transmission-card" aria-label="Launch status">
@@ -57,6 +60,84 @@
             creators.
           </p>
         </aside>
+      </section>
+
+      <section id="programming" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">What&rsquo;s on</p>
+          <h2>Programming built by fans, for fans.</h2>
+          <p class="lede">VOD, live events, and community-driven shows&mdash;all in one place. Subscribers get full access.</p>
+        </div>
+        <div class="program-grid">
+          <article class="program-card" data-locked="true">
+            <div class="card-badge badge-vod">VOD</div>
+            <div class="card-body">
+              <h3>Pilot Re-Watch: &ldquo;The Train Job&rdquo;</h3>
+              <p>The episode that started it all for broadcast viewers. Host commentary and behind-the-scenes notes included.</p>
+            </div>
+            <div class="card-lock" aria-label="Subscriber-only content">
+              <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
+              <span>Subscriber only</span>
+            </div>
+          </article>
+          <article class="program-card" data-locked="true">
+            <div class="card-badge badge-live">LIVE</div>
+            <div class="card-body">
+              <h3>Friday Night Watch Party</h3>
+              <p>Every Friday at 8 PM ET. A host picks the episode, fans watch together, and the chat flies.</p>
+              <p class="card-meta">Next: This Friday &middot; Host TBD</p>
+            </div>
+            <div class="card-lock" aria-label="Subscriber-only content">
+              <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
+              <span>Subscriber only</span>
+            </div>
+          </article>
+          <article class="program-card" data-locked="true">
+            <div class="card-badge badge-community">Community</div>
+            <div class="card-body">
+              <h3>Signal Boost: Indie Sci-Fi Creators</h3>
+              <p>A rotating spotlight on fan filmmakers, artists, and podcasters keeping independent sci-fi alive.</p>
+            </div>
+            <div class="card-lock" aria-label="Subscriber-only content">
+              <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
+              <span>Subscriber only</span>
+            </div>
+          </article>
+          <article class="program-card" data-locked="true">
+            <div class="card-badge badge-vod">VOD</div>
+            <div class="card-body">
+              <h3>Host Aftershow: &ldquo;Objects in Space&rdquo;</h3>
+              <p>Deep-dive discussion, fan theories, and production trivia hosted by community voices.</p>
+            </div>
+            <div class="card-lock" aria-label="Subscriber-only content">
+              <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
+              <span>Subscriber only</span>
+            </div>
+          </article>
+          <article class="program-card" data-locked="true">
+            <div class="card-badge badge-live">LIVE</div>
+            <div class="card-body">
+              <h3>Convention Floor Live</h3>
+              <p>Live check-ins from fan conventions, cosplay meetups, and creator panels&mdash;streamed directly to subscribers.</p>
+              <p class="card-meta">Upcoming &middot; Schedule TBD</p>
+            </div>
+            <div class="card-lock" aria-label="Subscriber-only content">
+              <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
+              <span>Subscriber only</span>
+            </div>
+          </article>
+          <article class="program-card" data-locked="true">
+            <div class="card-badge badge-community">Community</div>
+            <div class="card-body">
+              <h3>Community Dispatch</h3>
+              <p>Updates from fan groups, charity drives, local meetups, and projects that deserve amplification.</p>
+            </div>
+            <div class="card-lock" aria-label="Subscriber-only content">
+              <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
+              <span>Subscriber only</span>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="watch" class="section">
@@ -110,6 +191,28 @@
         </ol>
       </section>
 
+      <section id="hosts" class="section host-section">
+        <div class="host-card">
+          <p class="eyebrow">Lead the signal</p>
+          <h2>Become a host.</h2>
+          <p>
+            browncoats.tv is built by fans who show up. Hosts lead watch parties,
+            run aftershows, spotlight creators, and shape the programming.
+            No production crew required&mdash;just passion and a point of view.
+          </p>
+          <div class="host-roles">
+            <span class="role-tag">Watch-party host</span>
+            <span class="role-tag">Aftershow host</span>
+            <span class="role-tag">Creator spotlight curator</span>
+            <span class="role-tag">Community dispatch editor</span>
+          </div>
+          <a class="button primary" href="mailto:hello@browncoats.tv?subject=Host%20Interest%20-%20browncoats.tv&body=Hi!%20I'm%20interested%20in%20hosting%20on%20browncoats.tv.%0A%0AName:%0AWhat%20I'd%20like%20to%20host:%0AAny%20relevant%20experience:">
+            I&rsquo;m interested in hosting
+          </a>
+          <p class="form-note">Opens your email client. No account needed yet.</p>
+        </div>
+      </section>
+
       <section id="join" class="section signup-section">
         <div>
           <p class="eyebrow">Join the crew</p>
@@ -134,6 +237,77 @@
       <p>&copy; <span id="year"></span> browncoats.tv</p>
       <a href="mailto:hello@browncoats.tv">hello@browncoats.tv</a>
     </footer>
+
+    <!-- Subscriber status banner (shown after mock checkout) -->
+    <div id="subscriberBanner" class="subscriber-banner" hidden>
+      <p>&#x2705; You&rsquo;re a demo subscriber. All content is unlocked. <button id="resetSubBtn" class="link-btn">Reset</button></p>
+    </div>
+
+    <!-- Mock checkout modal -->
+    <dialog id="checkoutModal" class="checkout-modal">
+      <div class="modal-inner">
+        <!-- Step 1: plan selection -->
+        <div id="checkoutStep1" class="modal-step">
+          <button class="modal-close" id="modalCloseBtn" aria-label="Close">&times;</button>
+          <p class="eyebrow">Choose your plan</p>
+          <h2>Support the signal directly.</h2>
+          <p class="modal-sub">This is a demo. No real charges will be made.</p>
+          <div class="plan-grid">
+            <button class="plan-card" data-plan="monthly">
+              <span class="plan-name">Monthly</span>
+              <span class="plan-price">$8<small>/mo</small></span>
+              <ul class="plan-perks">
+                <li>All VOD &amp; live content</li>
+                <li>Community chat access</li>
+                <li>Cancel anytime</li>
+              </ul>
+            </button>
+            <button class="plan-card featured" data-plan="annual">
+              <span class="plan-badge">Best value</span>
+              <span class="plan-name">Annual</span>
+              <span class="plan-price">$72<small>/yr</small></span>
+              <ul class="plan-perks">
+                <li>Everything in monthly</li>
+                <li>2 months free</li>
+                <li>Founding-member badge</li>
+              </ul>
+            </button>
+          </div>
+        </div>
+        <!-- Step 2: fake payment form -->
+        <div id="checkoutStep2" class="modal-step" hidden>
+          <button class="modal-close" id="modalCloseBtn2" aria-label="Close">&times;</button>
+          <p class="eyebrow">Demo checkout</p>
+          <h2>Enter payment details.</h2>
+          <p class="modal-sub">This is a static demo&mdash;nothing is sent anywhere.</p>
+          <form id="demoPayForm" class="demo-pay-form" autocomplete="off">
+            <label for="payName">Name on card</label>
+            <input id="payName" type="text" placeholder="Mal Reynolds" required>
+            <label for="payCard">Card number</label>
+            <input id="payCard" type="text" inputmode="numeric" placeholder="4242 4242 4242 4242" maxlength="19" required>
+            <div class="form-row">
+              <div class="field">
+                <label for="payExp">Expiry</label>
+                <input id="payExp" type="text" placeholder="12/30" maxlength="5" required>
+              </div>
+              <div class="field">
+                <label for="payCvc">CVC</label>
+                <input id="payCvc" type="text" inputmode="numeric" placeholder="123" maxlength="4" required>
+              </div>
+            </div>
+            <button type="submit" class="button primary full-width">Complete demo checkout</button>
+          </form>
+          <button class="link-btn" id="backToPlanBtn">&larr; Back to plans</button>
+        </div>
+        <!-- Step 3: success -->
+        <div id="checkoutStep3" class="modal-step" hidden>
+          <div class="success-icon" aria-hidden="true">&#x1F680;</div>
+          <h2>You&rsquo;re in.</h2>
+          <p>Demo subscription activated. All programming is now unlocked.</p>
+          <button class="button primary" id="successCloseBtn">Start watching</button>
+        </div>
+      </div>
+    </dialog>
 
     <script src="script.js"></script>
   </body>
