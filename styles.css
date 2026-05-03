@@ -99,6 +99,22 @@ main {
   color: var(--text);
 }
 
+.prototype-notice {
+  width: min(1120px, calc(100% - 40px));
+  margin: -4px auto 0;
+  border: 1px solid rgba(242, 166, 90, 0.28);
+  border-radius: 18px;
+  padding: 12px 16px;
+  background: rgba(242, 166, 90, 0.08);
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.prototype-notice strong {
+  color: var(--brand-bright);
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 360px;
@@ -160,6 +176,23 @@ h3 {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+}
+
+.proof-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+
+.proof-strip span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 12px;
+  background: rgba(255, 244, 226, 0.06);
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 750;
 }
 
 .button,
@@ -286,6 +319,70 @@ button {
   box-shadow: 0 16px 36px rgba(196, 118, 53, 0.16);
 }
 
+.compare-section {
+  padding-top: 40px;
+}
+
+.comparison-grid,
+.brief-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.comparison-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.comparison-card,
+.brief-card {
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: clamp(24px, 4vw, 34px);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.platform-card {
+  background:
+    linear-gradient(135deg, rgba(255, 244, 226, 0.08), rgba(255, 244, 226, 0.03)),
+    var(--panel);
+}
+
+.direct-card {
+  border-color: rgba(242, 166, 90, 0.42);
+  background:
+    radial-gradient(circle at top right, rgba(242, 166, 90, 0.18), transparent 18rem),
+    rgba(196, 118, 53, 0.1);
+}
+
+.check-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin: 22px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+  list-style: none;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 28px;
+}
+
+.check-list li::before {
+  position: absolute;
+  left: 0;
+  color: #8dffb0;
+  content: "\2713";
+  font-weight: 900;
+}
+
+.muted-list li::before {
+  color: var(--brand-bright);
+  content: "\2013";
+}
+
 .split-section {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -324,6 +421,31 @@ button {
   margin-bottom: 80px;
   border-radius: 34px;
   padding: clamp(28px, 5vw, 54px);
+}
+
+.brief-section {
+  padding-top: 40px;
+}
+
+.brief-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.brief-card {
+  min-height: 250px;
+}
+
+.brief-number {
+  display: inline-flex;
+  margin-bottom: 36px;
+  color: var(--brand-bright);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.brief-card p {
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .domain-cta {
@@ -426,6 +548,7 @@ input::placeholder {
 
 .site-footer {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
   padding: 32px 0 48px;
@@ -436,10 +559,15 @@ input::placeholder {
   margin: 0;
 }
 
+.footer-disclaimer {
+  max-width: 520px;
+}
+
 @media (max-width: 820px) {
   .site-header,
   .site-footer,
-  main {
+  main,
+  .prototype-notice {
     width: min(100% - 28px, 1120px);
   }
 
@@ -452,7 +580,9 @@ input::placeholder {
   .hero,
   .split-section,
   .signup-section,
-  .revenue-grid {
+  .revenue-grid,
+  .comparison-grid,
+  .brief-grid {
     grid-template-columns: 1fr;
   }
 
