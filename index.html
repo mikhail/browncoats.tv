@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="browncoats.tv is a home for independent sci-fi fans, watch parties, creator spotlights, and signal boosts."
+      content="browncoats.tv is a direct-to-fan hosting prototype for Firefly's upcoming animated series."
     >
     <meta property="og:title" content="browncoats.tv">
     <meta
       property="og:description"
-      content="A home for independent sci-fi fans, watch parties, creator spotlights, and signal boosts."
+      content="A direct-to-fan hosting prototype for Firefly's upcoming animated series."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://browncoats.tv/">
@@ -26,54 +26,122 @@
         <span>browncoats.tv</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#programming">Programming</a>
-        <a href="#watch">Watch</a>
-        <a href="#hosts">Hosts</a>
-        <a href="#signal">Signal</a>
-        <a href="#join">Join</a>
+        <a href="#pitch">Pitch</a>
+        <a href="#revenue">Revenue</a>
+        <a href="#programming">Demo</a>
+        <a href="#hosting">Hosting</a>
+        <a href="#domain">Domain</a>
       </nav>
-      <button class="nav-subscribe-btn" id="navSubscribeBtn">Subscribe</button>
+      <button class="nav-subscribe-btn" id="navSubscribeBtn">Preview checkout</button>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">The signal is coming online</p>
-          <h1>A new home for independent sci-fi fans.</h1>
+          <p class="eyebrow">For the Firefly animated series team</p>
+          <h1>Host Firefly directly.</h1>
           <p class="lede">
-            browncoats.tv is being built for watch parties, creator spotlights,
-            community dispatches, and the stories that keep flying long after
-            the credits roll.
+            browncoats.tv is a working prototype for an official direct-to-fan
+            home for the new Firefly animated series: subscription access,
+            hosted premieres, community events, and first-party audience data
+            instead of handing the relationship to a corporate marketplace.
           </p>
           <div class="hero-actions">
-            <a class="button primary subscribe-cta" href="#" id="heroSubscribeBtn">Become a subscriber</a>
-            <a class="button secondary" href="#programming">See what&rsquo;s on</a>
+            <a class="button primary" href="mailto:hello@browncoats.tv?subject=Transfer%20browncoats.tv%20to%20the%20Firefly%20team&body=Hi%2C%20I%20would%20like%20to%20talk%20about%20transferring%20browncoats.tv%20to%20the%20Firefly%20team%20for%20free.">
+              Contact me to transfer this domain for free
+            </a>
+            <a class="button secondary" href="#revenue">See the fan revenue model</a>
           </div>
         </div>
-        <aside class="transmission-card" aria-label="Launch status">
-          <div class="status-light" aria-hidden="true"></div>
-          <p class="card-label">Launch status</p>
-          <p class="card-title">Building the first wave</p>
+        <aside class="transmission-card hero-card" aria-label="Launch status">
+          <img class="hero-art" src="assets/hero-signal.svg" alt="Original space-western signal artwork">
+          <p class="card-label">Prototype thesis</p>
+          <p class="card-title">Do not rent the audience. Own the relationship.</p>
           <p>
-            Early programming will focus on community-hosted watch events,
-            short-form recommendations, and a weekly signal boost for indie
-            creators.
+            Firefly has a fanbase that has already proven long-term demand.
+            A self-hosted destination can turn that loyalty into measurable
+            subscriber revenue, premiere events, and a direct feedback loop.
           </p>
         </aside>
       </section>
 
+      <section id="pitch" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">The ask</p>
+          <h2>Choose a Firefly-owned home before choosing a platform landlord.</h2>
+          <p class="lede">
+            Amazon-style distribution can reach viewers, but it usually keeps
+            the customer relationship, the merchandising path, the watch data,
+            and the programming surface. browncoats.tv demonstrates the
+            alternative: Firefly controls the home, the schedule, and the fan
+            relationship.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">$</span>
+            <h3>Direct subscriber revenue</h3>
+            <p>Fans support the series through Browncoat and First Mate memberships instead of disappearing inside a bundle.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">@</span>
+            <h3>First-party audience</h3>
+            <p>Email, event attendance, tier upgrades, and community signals stay visible to the Firefly team.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true">▶</span>
+            <h3>Programming control</h3>
+            <p>Premieres, watch parties, host-led aftershows, and creator chats can be scheduled around fan rituals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="revenue" class="section revenue-section">
+        <div class="section-heading">
+          <p class="eyebrow">Direct-support model</p>
+          <h2>Turn Browncoat loyalty into recurring revenue.</h2>
+          <p class="lede">
+            This calculator is illustrative, not a forecast. It shows how a
+            direct subscription home can make demand legible before rights,
+            production, marketing, and operating costs are modeled.
+          </p>
+        </div>
+        <div class="revenue-grid">
+          <div class="revenue-card">
+            <label for="browncoatCount">Browncoat subscribers at $5.99/mo</label>
+            <input id="browncoatCount" type="number" min="0" step="100" value="25000">
+            <label for="firstMateCount">First Mate subscribers at $9.99/mo</label>
+            <input id="firstMateCount" type="number" min="0" step="100" value="5000">
+          </div>
+          <div class="revenue-card revenue-total">
+            <p class="card-label">Illustrative gross</p>
+            <p class="metric" id="grossMonthly">$199,700</p>
+            <p class="metric-label">per month before costs</p>
+            <p class="metric" id="grossAnnual">$2,396,400</p>
+            <p class="metric-label">annualized gross before costs</p>
+          </div>
+        </div>
+        <p class="disclaimer">
+          Prototype concept only. Revenue examples are hypothetical gross
+          calculations, not projections or guarantees. Actual economics depend
+          on rights, production costs, payment fees, taxes, refunds, churn,
+          marketing, platform operations, and deal structure.
+        </p>
+      </section>
+
       <section id="programming" class="section">
         <div class="section-heading">
-          <p class="eyebrow">What&rsquo;s on</p>
-          <h2>Programming built by fans, for fans.</h2>
-          <p class="lede">VOD, live events, and community-driven shows&mdash;all in one place. Subscribers get full access.</p>
+          <p class="eyebrow">What the hosted experience could include</p>
+          <h2>A Firefly home that is more than a video shelf.</h2>
+          <p class="lede">VOD, live premieres, hosted conversation, and community access in one branded subscriber experience.</p>
         </div>
         <div class="program-grid">
           <article class="program-card" data-locked="true">
+            <img class="program-art" src="assets/program-vod.svg" alt="Original VOD preview artwork">
             <div class="card-badge badge-vod">VOD</div>
             <div class="card-body">
-              <h3>Pilot Re-Watch: &ldquo;The Train Job&rdquo;</h3>
-              <p>The episode that started it all for broadcast viewers. Host commentary and behind-the-scenes notes included.</p>
+              <h3>Animated series premiere</h3>
+              <p>The official episode drop, extras, host intro, and companion notes in one subscriber-only release surface.</p>
             </div>
             <div class="card-lock" aria-label="Subscriber-only content">
               <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
@@ -81,11 +149,12 @@
             </div>
           </article>
           <article class="program-card" data-locked="true">
+            <img class="program-art" src="assets/program-live.svg" alt="Original live event preview artwork">
             <div class="card-badge badge-live">LIVE</div>
             <div class="card-body">
-              <h3>Friday Night Watch Party</h3>
-              <p>Every Friday at 8 PM ET. A host picks the episode, fans watch together, and the chat flies.</p>
-              <p class="card-meta">Next: This Friday &middot; Host TBD</p>
+              <h3>Hosted premiere night</h3>
+              <p>A timed launch event with an official host, moderated chat, and a reason for fans to show up together.</p>
+              <p class="card-meta">Example: Premiere Friday &middot; Official host TBD</p>
             </div>
             <div class="card-lock" aria-label="Subscriber-only content">
               <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
@@ -93,10 +162,11 @@
             </div>
           </article>
           <article class="program-card" data-locked="true">
+            <img class="program-art" src="assets/program-community.svg" alt="Original community preview artwork">
             <div class="card-badge badge-community">Community</div>
             <div class="card-body">
-              <h3>Signal Boost: Indie Sci-Fi Creators</h3>
-              <p>A rotating spotlight on fan filmmakers, artists, and podcasters keeping independent sci-fi alive.</p>
+              <h3>Members-only Discord</h3>
+              <p>Discord access now, with a built-in Firefly community area later if the official team wants first-party forums.</p>
             </div>
             <div class="card-lock" aria-label="Subscriber-only content">
               <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
@@ -104,10 +174,11 @@
             </div>
           </article>
           <article class="program-card" data-locked="true">
+            <img class="program-art" src="assets/program-vod.svg" alt="Original VOD preview artwork">
             <div class="card-badge badge-vod">VOD</div>
             <div class="card-body">
-              <h3>Host Aftershow: &ldquo;Objects in Space&rdquo;</h3>
-              <p>Deep-dive discussion, fan theories, and production trivia hosted by community voices.</p>
+              <h3>Behind-the-scenes dispatches</h3>
+              <p>Short producer updates, animation-progress notes, and cast/creator commentary between episode releases.</p>
             </div>
             <div class="card-lock" aria-label="Subscriber-only content">
               <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
@@ -115,11 +186,12 @@
             </div>
           </article>
           <article class="program-card" data-locked="true">
+            <img class="program-art" src="assets/program-live.svg" alt="Original live event preview artwork">
             <div class="card-badge badge-live">LIVE</div>
             <div class="card-body">
-              <h3>Convention Floor Live</h3>
-              <p>Live check-ins from fan conventions, cosplay meetups, and creator panels&mdash;streamed directly to subscribers.</p>
-              <p class="card-meta">Upcoming &middot; Schedule TBD</p>
+              <h3>Fireside chats</h3>
+              <p>Live Q&amp;A with producers, writers, animators, and hosts&mdash;the Beacon-style perk adapted for Firefly.</p>
+              <p class="card-meta">Example: Monthly &middot; Questions sourced from members</p>
             </div>
             <div class="card-lock" aria-label="Subscriber-only content">
               <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
@@ -127,10 +199,11 @@
             </div>
           </article>
           <article class="program-card" data-locked="true">
+            <img class="program-art" src="assets/program-community.svg" alt="Original community preview artwork">
             <div class="card-badge badge-community">Community</div>
             <div class="card-body">
-              <h3>Community Dispatch</h3>
-              <p>Updates from fan groups, charity drives, local meetups, and projects that deserve amplification.</p>
+              <h3>Fan demand dashboard</h3>
+              <p>A visible pulse of signups, event attendance, retention, and tier interest for the Firefly decision team.</p>
             </div>
             <div class="card-lock" aria-label="Subscriber-only content">
               <span class="lock-icon" aria-hidden="true">&#x1F512;</span>
@@ -140,52 +213,55 @@
         </div>
       </section>
 
-      <section id="watch" class="section">
+      <section id="hosting" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Watch together</p>
-          <h2>Built around appointment viewing.</h2>
+          <p class="eyebrow">Why self-hosted</p>
+          <h2>Distribution should not cost Firefly the relationship.</h2>
         </div>
         <div class="feature-grid">
           <article class="feature">
-            <h3>Watch parties</h3>
-            <p>Curated live events with simple schedules, host notes, and links to legal streaming options.</p>
+            <span class="feature-icon" aria-hidden="true">▶</span>
+            <h3>Premieres become events</h3>
+            <p>The animated series can launch with appointment-viewing rituals instead of being one tile in a huge catalog.</p>
           </article>
           <article class="feature">
-            <h3>Creator spotlights</h3>
-            <p>Short showcases for filmmakers, writers, artists, podcasters, and makers carrying the independent sci-fi torch.</p>
+            <span class="feature-icon" aria-hidden="true">★</span>
+            <h3>Fans support the source</h3>
+            <p>The pitch is simple: subscribe here because the money, attention, and signal go directly toward Firefly.</p>
           </article>
           <article class="feature">
-            <h3>Community dispatches</h3>
-            <p>Updates from local groups, conventions, charity drives, and fan-run projects worth amplifying.</p>
+            <span class="feature-icon" aria-hidden="true">☊</span>
+            <h3>The team can still syndicate later</h3>
+            <p>Self-hosting does not prevent broader deals; it gives Firefly leverage and proof of demand before negotiating.</p>
           </article>
         </div>
       </section>
 
       <section id="signal" class="section split-section">
         <div>
-          <p class="eyebrow">The signal plan</p>
-          <h2>Start small, keep it useful, grow with the crew.</h2>
+          <p class="eyebrow">Turnkey path</p>
+          <h2>What this prototype offers the Firefly team.</h2>
         </div>
         <ol class="timeline">
           <li>
             <span>01</span>
             <div>
-              <h3>Launch the landing page</h3>
-              <p>Give the domain a polished home and a clear way to collect interest.</p>
+              <h3>Take the domain</h3>
+              <p>browncoats.tv can be transferred to the official Firefly team for free as the starting point.</p>
             </div>
           </li>
           <li>
             <span>02</span>
             <div>
-              <h3>Add a schedule</h3>
-              <p>Publish upcoming events, hosts, and viewing links in a lightweight format.</p>
+              <h3>Validate direct demand</h3>
+              <p>Use mock tiers, waitlist flows, and event RSVPs to measure interest before committing to infrastructure.</p>
             </div>
           </li>
           <li>
             <span>03</span>
             <div>
-              <h3>Invite contributors</h3>
-              <p>Open submissions for recommendations, short reviews, and creator announcements.</p>
+              <h3>Choose the stack</h3>
+              <p>Move from prototype to turnkey OTT, custom self-hosted platform, or hybrid distribution with better leverage.</p>
             </div>
           </li>
         </ol>
@@ -193,43 +269,43 @@
 
       <section id="hosts" class="section host-section">
         <div class="host-card">
-          <p class="eyebrow">Lead the signal</p>
-          <h2>Become a host.</h2>
+          <img class="host-art" src="assets/host-badge.svg" alt="Original host badge artwork">
+          <p class="eyebrow">Host layer</p>
+          <h2>Firefly needs more than video hosting. It needs hosts.</h2>
           <p>
-            browncoats.tv is built by fans who show up. Hosts lead watch parties,
-            run aftershows, spotlight creators, and shape the programming.
-            No production crew required&mdash;just passion and a point of view.
+            If the animated series is looking for hosts, this site shows how
+            host-led programming becomes part of the product: premiere nights,
+            aftershows, fireside chats, Discord prompts, and weekly reasons for
+            subscribers to return.
           </p>
           <div class="host-roles">
-            <span class="role-tag">Watch-party host</span>
-            <span class="role-tag">Aftershow host</span>
-            <span class="role-tag">Creator spotlight curator</span>
-            <span class="role-tag">Community dispatch editor</span>
+            <span class="role-tag">Premiere host</span>
+            <span class="role-tag">Aftershow moderator</span>
+            <span class="role-tag">Creator Q&amp;A lead</span>
+            <span class="role-tag">Discord/community guide</span>
           </div>
-          <a class="button primary" href="mailto:hello@browncoats.tv?subject=Host%20Interest%20-%20browncoats.tv&body=Hi!%20I'm%20interested%20in%20hosting%20on%20browncoats.tv.%0A%0AName:%0AWhat%20I'd%20like%20to%20host:%0AAny%20relevant%20experience:">
-            I&rsquo;m interested in hosting
+          <a class="button primary" href="#programming">
+            Preview the hosted experience
           </a>
-          <p class="form-note">Opens your email client. No account needed yet.</p>
         </div>
       </section>
 
-      <section id="join" class="section signup-section">
+      <section id="domain" class="section signup-section">
         <div>
-          <p class="eyebrow">Join the crew</p>
-          <h2>Be first to hear when browncoats.tv launches.</h2>
+          <p class="eyebrow">Domain handoff</p>
+          <h2>Firefly can have browncoats.tv for free.</h2>
           <p>
-            The signup form is wired for a static-site friendly handoff. Replace
-            the placeholder action with your email platform when ready.
+            I bought this domain to make the pitch concrete. If the Firefly
+            team wants it, contact me and I will transfer the domain name to
+            you for free.
           </p>
         </div>
-        <form class="signup-form" action="mailto:hello@browncoats.tv" method="post" enctype="text/plain">
-          <label for="email">Email address</label>
-          <div class="form-row">
-            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-            <button type="submit">Notify me</button>
-          </div>
-          <p class="form-note">No spam. Just launch news and useful transmissions.</p>
-        </form>
+        <div class="domain-cta">
+          <a class="button primary" href="mailto:hello@browncoats.tv?subject=Transfer%20browncoats.tv%20to%20the%20Firefly%20team&body=Hi%2C%20I%20would%20like%20to%20talk%20about%20transferring%20browncoats.tv%20to%20the%20Firefly%20team%20for%20free.">
+            Contact me to transfer this domain
+          </a>
+          <p class="form-note">No affiliation or rights grant is implied by this prototype.</p>
+        </div>
       </section>
     </main>
 
@@ -254,22 +330,22 @@
           <p class="modal-sub">This is a demo. No real charges will be made.</p>
           <div class="plan-grid">
             <button class="plan-card" data-plan="monthly">
-              <span class="plan-name">Monthly</span>
-              <span class="plan-price">$8<small>/mo</small></span>
+              <span class="plan-name">Browncoat</span>
+              <span class="plan-price">$5.99<small>/mo</small></span>
               <ul class="plan-perks">
-                <li>All VOD &amp; live content</li>
-                <li>Community chat access</li>
-                <li>Cancel anytime</li>
+                <li>Animated series access</li>
+                <li>Premiere-night events</li>
+                <li>Members-only Discord</li>
               </ul>
             </button>
-            <button class="plan-card featured" data-plan="annual">
-              <span class="plan-badge">Best value</span>
-              <span class="plan-name">Annual</span>
-              <span class="plan-price">$72<small>/yr</small></span>
+            <button class="plan-card featured" data-plan="first-mate">
+              <span class="plan-badge">Higher support</span>
+              <span class="plan-name">First Mate</span>
+              <span class="plan-price">$9.99<small>/mo</small></span>
               <ul class="plan-perks">
-                <li>Everything in monthly</li>
-                <li>2 months free</li>
-                <li>Founding-member badge</li>
+                <li>Everything in Browncoat</li>
+                <li>Fireside chat access</li>
+                <li>Behind-the-scenes drops</li>
               </ul>
             </button>
           </div>

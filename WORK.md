@@ -37,6 +37,7 @@ DECISIONS:
 - Tier naming: $5.99 Browncoat and $9.99 First Mate <!-- ANSWERED: 2026-05-03T19:33:00Z -->
 - Main pitch CTA: Contact me to transfer this domain name to you for free <!-- ANSWERED: 2026-05-03T19:35:00Z -->
 - Revenue calculator default: 25,000 Browncoat subscribers plus 5,000 First Mate subscribers <!-- ANSWERED: 2026-05-03T19:38:00Z -->
+- Community perk direction: Discord access now, built-in community area later <!-- ANSWERED: 2026-05-03T19:39:00Z -->
 
 NEW TASKS:
 - [ ] implement subscription/paywall integration #payments <!-- CREATED: 2026-05-03T19:18:52Z id:work-implement-subscription-paywall-integration-payments-1777835932 -->
@@ -98,6 +99,7 @@ Ideas to adapt:
 - [ ] add a "Start here" guide for studios/hosts/fans explaining what the demo proves #onboarding
 - [ ] add a direct-support metric/mock revenue panel showing how fan subscriptions can fund the series without a platform middleman #pitch
 - [ ] add a members-only community perk, likely Discord for the prototype #community
+- DECISION: Show Discord as the immediate community perk, with built-in community as a future roadmap item. <!-- ANSWERED: 2026-05-03T19:39:00Z -->
 
 ---
 

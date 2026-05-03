@@ -1,0 +1,15 @@
+<svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Original community thumbnail graphic</title>
+  <desc id="desc">Overlapping message bubbles, stars, and a green signal mark.</desc>
+  <rect width="720" height="420" rx="28" fill="#1D120B"/>
+  <path d="M104 102H392C422 102 446 126 446 156V238C446 268 422 292 392 292H248L162 348V292H104C74 292 50 268 50 238V156C50 126 74 102 104 102Z" fill="#3B2416" stroke="#FFF4E2" stroke-opacity=".16" stroke-width="4"/>
+  <path d="M326 72H600C630 72 654 96 654 126V218C654 248 630 272 600 272H542V326L460 272H326C296 272 272 248 272 218V126C272 96 296 72 326 72Z" fill="#6C351B" stroke="#FFF4E2" stroke-opacity=".16" stroke-width="4"/>
+  <circle cx="386" cy="172" r="16" fill="#8DFFB0"/>
+  <circle cx="462" cy="172" r="16" fill="#F2A65A"/>
+  <circle cx="538" cy="172" r="16" fill="#FFF4E2" opacity=".82"/>
+  <path d="M128 178H220M128 216H304" stroke="#CDB99C" stroke-opacity=".7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M354 118H556M354 226H494" stroke="#FFF4E2" stroke-opacity=".35" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="116" cy="74" r="4" fill="#F2A65A"/>
+  <circle cx="638" cy="344" r="4" fill="#8DFFB0"/>
+  <circle cx="570" cy="354" r="2" fill="#FFF4E2"/>
+</svg>

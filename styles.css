@@ -205,21 +205,25 @@ button {
   padding: 30px;
 }
 
+.hero-card {
+  padding: 18px 18px 30px;
+}
+
+.hero-art {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: #120c08;
+}
+
 .transmission-card::after {
   position: absolute;
   inset: auto -20% -50% 10%;
   height: 180px;
   content: "";
   background: radial-gradient(circle, rgba(242, 166, 90, 0.28), transparent 70%);
-}
-
-.status-light {
-  width: 12px;
-  height: 12px;
-  margin-bottom: 60px;
-  border-radius: 50%;
-  background: #8dffb0;
-  box-shadow: 0 0 28px #8dffb0;
 }
 
 .card-label {
@@ -268,6 +272,20 @@ button {
   padding: 26px;
 }
 
+.feature-icon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  margin-bottom: 28px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(242, 166, 90, 0.24), rgba(255, 244, 226, 0.05));
+  color: var(--brand-bright);
+  font-weight: 900;
+  box-shadow: 0 16px 36px rgba(196, 118, 53, 0.16);
+}
+
 .split-section {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -306,6 +324,78 @@ button {
   margin-bottom: 80px;
   border-radius: 34px;
   padding: clamp(28px, 5vw, 54px);
+}
+
+.domain-cta {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.revenue-section {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.revenue-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 18px;
+}
+
+.revenue-card {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 26px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.revenue-card label {
+  display: block;
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.revenue-card input + label {
+  margin-top: 18px;
+}
+
+.revenue-card input {
+  width: 100%;
+}
+
+.revenue-total {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.metric {
+  margin-bottom: 4px;
+  color: var(--text);
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.07em;
+}
+
+.metric-label,
+.disclaimer {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.metric-label {
+  margin-bottom: 24px;
+}
+
+.disclaimer {
+  max-width: 920px;
+  margin: 18px 0 0;
+  font-size: 0.9rem;
 }
 
 .signup-form label {
@@ -361,7 +451,8 @@ input::placeholder {
 
   .hero,
   .split-section,
-  .signup-section {
+  .signup-section,
+  .revenue-grid {
     grid-template-columns: 1fr;
   }
 
@@ -421,6 +512,16 @@ input::placeholder {
   flex-direction: column;
   gap: 12px;
   transition: border-color 0.3s;
+}
+
+.program-art {
+  display: block;
+  width: calc(100% + 52px);
+  max-width: none;
+  height: 160px;
+  margin: -26px -26px 10px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--line);
 }
 
 .program-card[data-locked="true"] .card-body {
@@ -501,6 +602,15 @@ input::placeholder {
 .host-card {
   max-width: 680px;
   text-align: center;
+}
+
+.host-art {
+  display: block;
+  width: min(220px, 70%);
+  margin: 0 auto 28px;
+  border: 1px solid var(--line);
+  border-radius: 34px;
+  box-shadow: var(--shadow);
 }
 
 .host-card .eyebrow,

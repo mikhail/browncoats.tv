@@ -1,0 +1,58 @@
+<svg width="760" height="560" viewBox="0 0 760 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">A stylized signal ship crossing a copper planet</title>
+  <desc id="desc">Original abstract space-western artwork with a ship silhouette, glowing signal rings, and stars.</desc>
+  <defs>
+    <radialGradient id="planet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7B267"/>
+      <stop offset="56%" stop-color="#B66532"/>
+      <stop offset="100%" stop-color="#4A2214"/>
+    </radialGradient>
+    <linearGradient id="hull" x1="199" y1="251" x2="552" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4E2"/>
+      <stop offset="0.42" stop-color="#CDB99C"/>
+      <stop offset="1" stop-color="#6C351B"/>
+    </linearGradient>
+    <linearGradient id="flare" x1="194" y1="293" x2="62" y2="293" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2A65A"/>
+      <stop offset="1" stop-color="#F2A65A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="760" height="560" rx="40" fill="#120C08"/>
+  <path d="M0 0H760V560H0V0Z" fill="url(#bg)" opacity=".2"/>
+  <circle cx="526" cy="208" r="174" fill="url(#planet)" opacity=".92"/>
+  <path d="M370 112C441 90 518 96 586 129" stroke="#FFF4E2" stroke-opacity=".16" stroke-width="5" stroke-linecap="round"/>
+  <path d="M394 334C462 374 548 382 624 354" stroke="#120C08" stroke-opacity=".24" stroke-width="18" stroke-linecap="round"/>
+  <path d="M406 166C482 141 550 154 610 199" stroke="#FFF4E2" stroke-opacity=".12" stroke-width="4" stroke-linecap="round"/>
+  <g opacity=".8">
+    <circle cx="92" cy="82" r="3" fill="#FFF4E2"/>
+    <circle cx="142" cy="166" r="2" fill="#F2A65A"/>
+    <circle cx="666" cy="86" r="2" fill="#FFF4E2"/>
+    <circle cx="682" cy="452" r="3" fill="#F2A65A"/>
+    <circle cx="112" cy="438" r="2" fill="#FFF4E2"/>
+    <circle cx="314" cy="70" r="2" fill="#FFF4E2"/>
+  </g>
+  <g filter="url(#glow)" opacity=".86">
+    <path d="M166 292H48" stroke="url(#flare)" stroke-width="15" stroke-linecap="round"/>
+    <path d="M190 276H86" stroke="url(#flare)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M190 309H86" stroke="url(#flare)" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <path d="M178 292C232 258 301 234 379 228C456 222 517 240 560 277C493 303 425 327 336 334C268 339 214 324 178 292Z" fill="url(#hull)"/>
+  <path d="M379 228C416 186 463 165 520 160C497 207 471 241 442 263" fill="#8A4B2A"/>
+  <path d="M326 334C356 373 399 395 456 402C445 356 426 324 399 306" fill="#3B2416"/>
+  <path d="M252 280C296 260 340 250 386 250" stroke="#120C08" stroke-opacity=".5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M228 304C286 320 355 316 437 292" stroke="#FFF4E2" stroke-opacity=".25" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="402" cy="269" r="17" fill="#120C08" fill-opacity=".5"/>
+  <circle cx="402" cy="269" r="8" fill="#8DFFB0" opacity=".85"/>
+  <path d="M210 179C279 116 375 80 480 85" stroke="#F2A65A" stroke-opacity=".38" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 16"/>
+  <path d="M238 409C333 474 463 489 572 448" stroke="#F2A65A" stroke-opacity=".3" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 16"/>
+  <circle cx="604" cy="102" r="58" stroke="#8DFFB0" stroke-opacity=".18" stroke-width="3"/>
+  <circle cx="604" cy="102" r="84" stroke="#8DFFB0" stroke-opacity=".11" stroke-width="3"/>
+  <circle cx="604" cy="102" r="111" stroke="#8DFFB0" stroke-opacity=".07" stroke-width="3"/>
+</svg>

@@ -7,6 +7,8 @@ if (year) {
 /* ── Subscriber state (localStorage-backed) ── */
 
 const STORAGE_KEY = "browncoats_subscriber";
+const BROWNCOAT_PRICE = 5.99;
+const FIRST_MATE_PRICE = 9.99;
 
 function isSubscriber() {
   try {
@@ -50,10 +52,36 @@ function applySubscriberState() {
       navBtn.textContent = "Subscribed ✓";
       navBtn.classList.add("subscribed");
     } else {
-      navBtn.textContent = "Subscribe";
+      navBtn.textContent = "Preview checkout";
       navBtn.classList.remove("subscribed");
     }
   }
+}
+
+function formatCurrency(value) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0
+  }).format(value);
+}
+
+function updateRevenueModel() {
+  const browncoatInput = document.getElementById("browncoatCount");
+  const firstMateInput = document.getElementById("firstMateCount");
+  const monthlyEl = document.getElementById("grossMonthly");
+  const annualEl = document.getElementById("grossAnnual");
+
+  if (!browncoatInput || !firstMateInput || !monthlyEl || !annualEl) {
+    return;
+  }
+
+  const browncoats = Number(browncoatInput.value) || 0;
+  const firstMates = Number(firstMateInput.value) || 0;
+  const monthly = browncoats * BROWNCOAT_PRICE + firstMates * FIRST_MATE_PRICE;
+
+  monthlyEl.textContent = formatCurrency(monthly);
+  annualEl.textContent = formatCurrency(monthly * 12);
 }
 
 /* ── Checkout modal ── */
@@ -158,6 +186,11 @@ if (resetBtn) {
   });
 }
 
+document.querySelectorAll("#browncoatCount, #firstMateCount").forEach(function (input) {
+  input.addEventListener("input", updateRevenueModel);
+});
+
 // Apply state on load
 applySubscriberState();
+updateRevenueModel();
 
