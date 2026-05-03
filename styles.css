@@ -595,7 +595,7 @@ input::placeholder {
 
   .feature-grid,
   .program-grid,
-  .pilot-grid {
+  .hub-grid {
     grid-template-columns: 1fr;
   }
 
@@ -697,19 +697,19 @@ input::placeholder {
   width: fit-content;
 }
 
-/* ── Pilot section ── */
+/* ── Hub section ── */
 
-.pilot-section {
+.hub-section {
   border-top: 1px solid var(--line);
 }
 
-.pilot-grid {
+.hub-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
-.pilot-metric-card {
+.hub-card {
   border: 1px solid var(--line);
   border-radius: 28px;
   padding: 26px;
@@ -718,12 +718,12 @@ input::placeholder {
   min-height: 200px;
 }
 
-.pilot-metric-card p {
+.hub-card p {
   color: var(--muted);
   line-height: 1.65;
 }
 
-.pilot-number {
+.hub-number {
   display: inline-flex;
   margin-bottom: 18px;
   color: var(--brand-bright);
