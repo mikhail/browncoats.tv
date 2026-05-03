@@ -30,9 +30,42 @@ DECISIONS:
 - Audience model: subscription-only <!-- ANSWERED: 2026-05-03T19:17:41Z -->
 - Demo payments: mock payments for prototype, no live processor yet <!-- ANSWERED: 2026-05-03T19:19:33Z -->
 - Core Firefly pitch: combine a direct fan-owned streaming home with host-led watch/community programming <!-- ANSWERED: 2026-05-03T19:20:00Z -->
+- Naming: name Firefly explicitly throughout the pitch prototype <!-- ANSWERED: 2026-05-03T19:24:00Z -->
 
 NEW TASKS:
 - [ ] implement subscription/paywall integration #payments <!-- CREATED: 2026-05-03T19:18:52Z id:work-implement-subscription-paywall-integration-payments-1777835932 -->
 - [ ] build mock subscription checkout flow #payments #demo
 - [ ] rewrite homepage around Firefly fan-owned streaming pitch #copy #demo
 ERROR: 2026-05-03T19:20:46Z git commit failed: not a git repository
+
+---
+
+PLANNER_NOTES: Firefly demo direction
+
+Recommended homepage sections:
+- Hero: position browncoats.tv as a subscription-only, fan-owned streaming home for Firefly-style sci-fi that keeps the signal alive beyond platform algorithms.
+- Why not big platforms: contrast direct fan membership, programming control, host relationships, and community rituals against Amazon-style distribution.
+- Programming preview: show a mix of VOD pilots/clips, scheduled live watch parties, host-led aftershows, and community dispatches.
+- Membership model: present a mock subscriber pass with included access, community perks, and a clear "demo checkout" CTA.
+- Host pitch: invite hosts to lead watch nights, episode discussions, creator interviews, and fan-culture programming.
+
+Demo interactions/features to build next:
+- Mock subscription checkout modal/page with plan selection, fake card fields, success state, and "subscriber unlocked" UI.
+- Static paywall preview where locked VOD/live/community cards become available after demo checkout using localStorage.
+- Live schedule/program guide with host names, event status, and "remind me" or "join lobby" prototype buttons.
+- Watch-room teaser interaction with video placeholder, host notes, live chat mock feed, and community prompts.
+- Host application/interest form that routes via mailto or static-friendly placeholder while capturing the pitch narrative.
+
+QUESTION: Should the prototype name Firefly explicitly throughout, or should it use "Firefly-inspired / browncoat sci-fi" language to keep the demo safer and more pitch-flexible?
+ANSWER: Name Firefly explicitly throughout. <!-- ANSWERED: 2026-05-03T19:24:00Z -->
+QUESTION: Who is the primary decision-maker audience for the demo: potential hosts, rights/content partners, investors, or fan-community organizers?
+QUESTION: What mock subscription tiers or price points should the demo show, if any?
+QUESTION: Should the homepage CTA prioritize "become a subscriber" or "apply to host a show" for the next iteration?
+
+- [ ] rewrite homepage hero copy around fan-owned subscription streaming plus host-led community programming #homepage #positioning
+- [ ] add a "Why not big platforms" comparison section emphasizing control, direct fan relationship, and appointment-viewing rituals #homepage #strategy
+- [ ] add a static programming preview grid covering VOD, Live, and Community content types #content-model #homepage
+- [ ] build mock subscription checkout flow with fake payment success and no live processor #payments #demo
+- [ ] add a lightweight subscriber-unlocked state using localStorage for static paywall demo cards #payments #demo
+- [ ] add a live schedule/watch-room teaser with host notes and mock chat/activity #live #community
+- [ ] add a host recruitment section and static-friendly interest CTA/form #hosts #homepage
