@@ -776,55 +776,6 @@ input::placeholder {
   font-size: 1rem;
 }
 
-/* ── Host recruitment section ── */
-
-.host-section {
-  display: flex;
-  justify-content: center;
-}
-
-.host-card {
-  max-width: 680px;
-  text-align: center;
-}
-
-.host-art {
-  display: block;
-  width: min(220px, 70%);
-  margin: 0 auto 28px;
-  border: 1px solid var(--line);
-  border-radius: 34px;
-  box-shadow: var(--shadow);
-}
-
-.host-card .eyebrow,
-.host-card h2 {
-  text-align: center;
-}
-
-.host-card p {
-  color: var(--muted);
-  line-height: 1.65;
-}
-
-.host-roles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin: 24px 0 32px;
-}
-
-.role-tag {
-  padding: 8px 16px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--muted);
-  background: rgba(255, 244, 226, 0.05);
-}
-
 /* ── Subscriber banner ── */
 
 .subscriber-banner {
@@ -1014,17 +965,18 @@ input::placeholder {
 .demo-pay-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .demo-pay-form label {
   font-weight: 700;
   font-size: 0.88rem;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 .demo-pay-form .form-row {
   gap: 12px;
+  flex-wrap: nowrap;
 }
 
 .demo-pay-form .field {
@@ -1032,6 +984,16 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.demo-pay-form input {
+  width: 100%;
+  flex: none;
+  min-height: 42px;
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  line-height: 1.25;
 }
 
 .full-width {
