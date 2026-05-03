@@ -31,6 +31,7 @@ DECISIONS:
 - Demo payments: mock payments for prototype, no live processor yet <!-- ANSWERED: 2026-05-03T19:19:33Z -->
 - Core Firefly pitch: combine a direct fan-owned streaming home with host-led watch/community programming <!-- ANSWERED: 2026-05-03T19:20:00Z -->
 - Naming: name Firefly explicitly throughout the pitch prototype <!-- ANSWERED: 2026-05-03T19:24:00Z -->
+- Primary demo audience: Firefly owners, producers, and studio decision-makers <!-- ANSWERED: 2026-05-03T19:26:00Z -->
 
 NEW TASKS:
 - [ ] implement subscription/paywall integration #payments <!-- CREATED: 2026-05-03T19:18:52Z id:work-implement-subscription-paywall-integration-payments-1777835932 -->
@@ -59,6 +60,7 @@ Demo interactions/features to build next:
 QUESTION: Should the prototype name Firefly explicitly throughout, or should it use "Firefly-inspired / browncoat sci-fi" language to keep the demo safer and more pitch-flexible?
 ANSWER: Name Firefly explicitly throughout. <!-- ANSWERED: 2026-05-03T19:24:00Z -->
 QUESTION: Who is the primary decision-maker audience for the demo: potential hosts, rights/content partners, investors, or fan-community organizers?
+ANSWER: Firefly owners/producers/studio decision-makers. <!-- ANSWERED: 2026-05-03T19:26:00Z -->
 QUESTION: What mock subscription tiers or price points should the demo show, if any?
 QUESTION: Should the homepage CTA prioritize "become a subscriber" or "apply to host a show" for the next iteration?
 
