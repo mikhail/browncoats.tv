@@ -33,6 +33,7 @@ DECISIONS:
 - Naming: name Firefly explicitly throughout the pitch prototype <!-- ANSWERED: 2026-05-03T19:24:00Z -->
 - Primary demo audience: Firefly owners, producers, and studio decision-makers <!-- ANSWERED: 2026-05-03T19:26:00Z -->
 - Mock pricing: $5.99 Browncoat tier plus $9.99 higher tier, name TBD but below Captain <!-- ANSWERED: 2026-05-03T19:28:00Z -->
+- Next emphasis: direct-support revenue pitch to Firefly decision-makers <!-- ANSWERED: 2026-05-03T19:32:00Z -->
 
 NEW TASKS:
 - [ ] implement subscription/paywall integration #payments <!-- CREATED: 2026-05-03T19:18:52Z id:work-implement-subscription-paywall-integration-payments-1777835932 -->
